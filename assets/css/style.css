@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   border: 0;
@@ -8,13 +8,13 @@
 
 :root {
   --lead: #212121;
-  --gold-finger: #F2BD12;
-  --eye-ball: #FFFDF7;
-  --hint-yellow: #FCF1CC;
-  --pure-white: #FFF;
+  --gold-finger: #f2bd12;
+  --eye-ball: #fffdf7;
+  --hint-yellow: #fcf1cc;
+  --pure-white: #fff;
 }
 
-body { 
+body {
   background: var(--eye-ball);
 }
 
@@ -32,13 +32,13 @@ body {
 
 .btn {
   display: inline-block;
-  padding: .9rem 2rem;
+  padding: 0.9rem 2rem;
   background: var(--gold-finger);
   border-radius: 1rem;
   font-size: 1.1rem;
   color: var(--pure-white);
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -46,6 +46,7 @@ body {
 }
 
 .cart-icon {
+  color: var(--lead);
   font-size: 1.3rem;
   position: relative;
 }
@@ -54,7 +55,7 @@ body {
   position: absolute;
   top: 50%;
   right: -10px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   width: 20px;
   aspect-ratio: 1;
   border-radius: 100vw;
@@ -81,6 +82,7 @@ a {
 .flex {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 li {
@@ -99,7 +101,7 @@ li {
   gap: 3rem;
 }
 
-.desktop-action .hamburger { 
+.desktop-action .hamburger {
   font-size: 1.5rem;
   display: none;
 }
@@ -115,6 +117,41 @@ img {
   display: block;
 }
 
+.p-top {
+  padding-top: 10rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  color: var(--gold-finger);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.7rem;
+  text-transform: capitalize;
+  color: var(--lead);
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--lead);
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-half {
+  margin-top: .5rem;
+}
+
 /* Main area styling */
 
 .hero-section {
@@ -122,8 +159,10 @@ img {
 }
 
 .content,
-.image-container {
+.image-container,
+.service-card {
   flex: 1;
+  flex-basis: 300px;
 }
 
 h1 {
@@ -158,13 +197,84 @@ p {
   justify-content: center;
   line-height: 3rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  background: var(--lead);
+  color: var(--pure-white);
+}
+
+.service-card h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Our menu section styling  */
+
+.order-card img {
+  width: 15rem;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0 10px 10px);
+}
+
+.order-card {
+  flex: 1;
+  flex-basis: 300px;
+  padding: 0 1rem 2rem 1rem;
+  background: var(--pure-white);
+  border: 0.1rem solid var(--gold-finger);
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
+    rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: var(--lead);
+}
+
+.order-card .price {
+  font-size: 1.7rem;
+  color: var(--gold-finger);
+  padding: 1.3rem 0 2rem 0;
+}
+
+.profile {
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  overflow: hidden;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fa-star {
+  color: var(--gold-finger);
+}
+
+.review-container {
+  max-width: 100%;
+  width: 650px;
+  flex: 1;
+}
+
+/* slider css */
+
+.swiper {
+  width: 100%;
+  margin-top: 2rem;
 }
 
 /* Media Query */
 
 @media screen and (max-width: 880px) {
+  /* 1 Header Styling Start */
   .navlist,
-  .desktop-action .btn{
+  .desktop-action .btn {
     display: none;
   }
 
@@ -180,21 +290,48 @@ p {
     gap: 2rem;
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: -100%;
     transform: translateX(-50%);
     width: 20rem;
     padding: 2rem;
     background: var(--pure-white);
-    border: .1rem solid var(--gold-finger);
+    border: 0.1rem solid var(--gold-finger);
     border-radius: 2rem;
-    box-shadow: 
-    rgba(0, 0, 0, 0.05) 8px 8px 8px,
-    rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
-    transition: all .5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
+      rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+    transition: all 0.5s ease-in-out;
   }
 
   .mobile-menu-active {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* Header Styling End */
+
+  /* 2 Main Area Styling Start */
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .content {
+    padding-top: 3rem;
+  }
+
+  .gap-2 {
+    gap: 1.4rem;
+  }
+
+  .gap4 {
+    gap: 4rem;
+  }
+
+  /* 2.1 Our Services Section */
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  /* Main Area Styling End */
 }
