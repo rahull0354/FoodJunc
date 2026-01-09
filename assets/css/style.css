@@ -6,6 +6,11 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --lead: #212121;
   --gold-finger: #f2bd12;
