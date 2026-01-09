@@ -390,6 +390,7 @@ h4 {
   align-items: center;
   z-index: 99;
   box-shadow: rgba(0, 0, 0, 0.1) -10px -10px 20px;
+  transition: .3s ease-in-out;
 }
 
 .cart-tab-active {
@@ -439,7 +440,16 @@ h4 {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.7rem 1rem;
+  padding: .7rem 1rem;
+  transition: all .5s ease-in-out;
+}
+
+.item .detail {
+  flex: 2;
+}
+
+.item .app-container {
+  transform: translateX(50%);
 }
 
 .item .item-image img {

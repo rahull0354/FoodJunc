@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Double Cheese Burger",
+        "price": "₹150",
+        "image": "assets/imgs/burger.png"
+    },
+    {
+        "id": 2,
+        "name": "Cheese Lasagna",
+        "price": "₹250",
+        "image": "assets/imgs/lasagna.png"
+    },
+    {
+        "id": 3,
+        "name": "Margarita Pizza",
+        "price": "₹190",
+        "image": "assets/imgs/pizza.png"
+    },
+    {
+        "id": 4,
+        "name": "Triple Cheese Sandwich",
+        "price": "₹130",
+        "image": "assets/imgs/sandwich.png"
+    },
+    {
+        "id": 5,
+        "name": "Spaghetti",
+        "price": "₹180",
+        "image": "assets/imgs/spaghetti.png"
+    },
+    {
+        "id": 6,
+        "name": "Spring Roll",
+        "price": "₹80",
+        "image": "assets/imgs/spring-roll.png"
+    }
+]
