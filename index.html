@@ -80,7 +80,7 @@
             <a href="#about">About Us</a>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Reserve Table</a>
           </li>
           <li>
             <a href="#" class="btn">
@@ -380,31 +380,51 @@
       </section>
       <!-- Find Us on Map section end -->
 
-      <!-- 2.5 newsletter section start -->
+      <!-- 2.5 reservation form section start -->
       <section id="contact">
         <div class="wrapper p-top">
           <div class="text-center">
-            <h5>Newsletter Subscription</h5>
-            <h2>Stay Updated!</h2>
+            <h5>Table Reservation</h5>
+            <h2>Book Your Table</h2>
             <p class="para m-auto">
-              Subscribe to our newsletter to receive the latest news and
-              exclusive offers.
+              Reserve your spot for an unforgettable dining experience. We'll
+              have everything ready for your arrival.
             </p>
 
-            <label class="input-container flex">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="john@gmail.com"
-                autocomplete="off"
-              />
-              <a href="#" class="btn">Subscribe</a>
-            </label>
+            <form class="reservation-form">
+              <div class="form-row flex gap-2">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+                </div>
+              </div>
+              <div class="form-row flex gap-2">
+                <div class="form-group">
+                  <input type="date" name="date" id="date" required />
+                </div>
+                <div class="form-group">
+                  <select name="guests" id="guests" required>
+                    <option value="">Number of Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6+ People</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" rows="3" placeholder="Special Requests (Optional)"></textarea>
+              </div>
+              <button type="submit" class="btn">Book Now</button>
+            </form>
           </div>
         </div>
       </section>
-      <!-- newsletter section end -->
+      <!-- reservation form section end -->
     </main>
     <!-- Main Area End -->
 
